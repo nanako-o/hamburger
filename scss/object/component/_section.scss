@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+.c-section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.c-section__item {
+  width: 313px;
+  height: 597px;
+  padding: 20px  10px 0 10px;
+  position: relative;
+  .c-section__line {
+      position: absolute;
+      width: 35px;
+      height: 20px;
+      display: block;
+      border-bottom: solid 2px #ffffff;
+  }
+  h2 {
+      color: #ffffff;
+      font-size: 4rem;
+  }
+}
+
+.c-section__item--takeout {
+  margin: 50px 25px 50px 50px;
+  background-image: url(../img/takeout.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c-section__item--eatin {
+  margin: 50px 50px 50px 25px;
+  background-image: url(../img/eatin.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c-section__inner {
+  box-sizing: border-box;
+  width: 85%;
+  height: 87px;
+  padding: 10px;
+  background: rgba(255,255,255,0.7);
+  h3 {
+      margin-bottom: 10px;
+      color: #3C2A10;
+      font-size: 1.2rem;
+  }
+  p {
+      color: #3C2A10;
+      font-size: 0.8rem;
+  }
+}
+
+.c-section__inner1 {
+  position: absolute;
+  left: 23.5px;
+  bottom: 117px;
+}
+
+.c-section__inner2 {
+  position: absolute;
+  left: 23.5px;
+  bottom: 20px;
+}

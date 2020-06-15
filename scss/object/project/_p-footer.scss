@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.p-footer {
+    color: #ffffff;
+    text-align: center;
+    span {
+        font-size: 0.7rem;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    li {
+        font-size: 1rem;
+        padding: 0 5px 0 5px;
+        margin: 20px 0 20px 0;
+        &:first-child {
+            border-right: solid 1px #ffffff;
+        }
+      }
+}

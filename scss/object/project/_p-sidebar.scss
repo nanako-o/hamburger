@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.p-aside {
+    a {
+        width: 130px;
+        text-decoration: none;
+        &:link,&:visited,&:hover,&:active {
+            color: #707070;
+        }
+    }
+    h2 {
+        margin: 46px 0 46px 0;
+        padding-left:30px;
+        color: #707070;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h3 {
+        margin: 46px 0 46px 0;
+        padding-left:30px;
+        color: #707070;
+        font-size: 1.2rem;
+        font-weight: bold;
+    
+    }
+    ul{
+        width: 240px;
+        padding-left:20px;
+        list-style: none;
+        li{
+            margin: 23px;
+            font-size: 1rem;
+        }
+    }
+}

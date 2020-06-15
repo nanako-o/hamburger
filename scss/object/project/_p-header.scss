@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+.p-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+        padding-left:50px;
+        color: #707070;
+        font-size: 3.2rem;
+        line-height: 109px;
+    }
+}
+
+.p-header__seach {
+    position: absolute;
+    padding-right:20px;
+    right: 50px;
+    .p-header__seach--text {
+        box-sizing: border-box;
+        width: 198px;
+        height: 23px;
+        border: solid 1px #707070;
+        border-radius: 5px;
+        background-color: #ffffff;
+        background-image: url(../img/seach.png);
+        background-size: 12px 12px;
+        background-repeat: no-repeat;
+        background-position: 5px center;
+        padding-left: 21px;
+        outline: 0;
+    }
+    .p-header__seach--btn {
+        box-sizing: border-box;
+        width: 68px;
+        height: 23px;
+        border: solid 1px #707070;
+        border-radius: 5px;
+        background:linear-gradient(to bottom,#F2EDE9,#DED8D3);
+        color: #707070;
+        font-size: 1rem;
+    }
+}
+
+.p-header__hamburger {
+    display: none;
+}
+
+.p-header__nav {
+    width: 270px;
+    height: 100%;
+    padding: 40px 0 40px;
+    background-color: #F2EDE9;
+    .p-header__nav--icon {
+        padding-right: 30px;
+        text-align: right;
+        font-size: 2rem;
+        color: #707070;
+    }
+    a {
+        width: 130px;
+        text-decoration: none;
+        &:link,&:visited,&:hover,&:active {
+            color: #707070;
+        }
+    }
+    h2 {
+        margin: 46px 0 46px 0;
+        padding-left:30px;
+        color: #707070;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    h3 {
+        margin: 46px 0 46px 0;
+        padding-left:30px;
+        color: #707070;
+        font-size: 1.2rem;
+        font-weight: bold;
+    
+    }
+    ul{
+        width: 240px;
+        padding-left:20px;
+        list-style: none;
+
+        li{
+            margin: 23px;
+            font-size: 1rem;
+        }
+    }
+    .p-header__list {
+        height: 100%;
+        overflow-y: auto;
+    }
+}
