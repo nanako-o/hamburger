@@ -48,8 +48,6 @@
 }
 
 .p-header__nav {
-    width: 270px;
-    height: 100%;
     padding: 40px 0 40px;
     background-color: #F2EDE9;
     .p-header__nav--icon {
@@ -92,6 +90,6 @@
     }
     .p-header__list {
         height: 100%;
-        overflow-y: auto;
+        overflow-x: hidden;
     }
 }

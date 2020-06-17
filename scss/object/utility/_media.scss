@@ -2,16 +2,14 @@
 
 @media screen and (max-width: 768px) {
   body {
-      overflow-y: hidden;
+      overflow-y: auto;
     }
   
   .l-main {
       width: 100%;
   }
   .l-aside {
-      display:inline;
-      visibility: hidden;
-      overflow-y: hidden;
+      display: none;
   }
 
   .p-header__hamburger {
