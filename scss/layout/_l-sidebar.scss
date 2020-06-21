@@ -2,7 +2,9 @@
 
 .l-aside {
     width: 20%;
-    height: 1422px;
+    height: 100%;
     float: right;
     background-color: #F2EDE9;
+    padding-bottom: 32768px;
+	margin-bottom: -32768px;
 }

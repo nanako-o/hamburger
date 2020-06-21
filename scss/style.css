@@ -10,13 +10,18 @@ html {
 body {
   overflow-x: hidden; }
 
+body > .l-aside {
+  height: auto; }
+
 /* ==============================================================
     Layout
     ==============================================================*/
 .l-wrap {
   width: 100%;
+  height: 100%;
   margin: 0 auto;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  overflow: hidden; }
   .l-wrap:after {
     content: "";
     display: block;
@@ -30,14 +35,16 @@ body {
 .l-main {
   position: relative;
   width: 80%;
-  height: 1422px;
+  height: 100%;
   float: left; }
 
 .l-aside {
   width: 20%;
-  height: 1422px;
+  height: 100%;
   float: right;
-  background-color: #F2EDE9; }
+  background-color: #F2EDE9;
+  padding-bottom: 32768px;
+  margin-bottom: -32768px; }
 
 .l-footer {
   width: 100%;
@@ -57,17 +64,18 @@ body {
   .p-header h1 {
     padding-left: 50px;
     color: #707070;
-    font-size: 3.2rem;
+    font-size: 3.2vw;
     line-height: 109px; }
 
 .p-header__seach {
-  position: absolute;
-  padding-right: 20px;
-  right: 50px; }
+  width: 40%;
+  text-align: right;
+  padding-right: 20px; }
   .p-header__seach .p-header__seach--text {
     box-sizing: border-box;
-    width: 198px;
+    width: 40%;
     height: 23px;
+    padding-left: 20px;
     border: solid 1px #707070;
     border-radius: 5px;
     background-color: #ffffff;
@@ -75,11 +83,10 @@ body {
     background-size: 12px 12px;
     background-repeat: no-repeat;
     background-position: 5px center;
-    padding-left: 21px;
     outline: 0; }
   .p-header__seach .p-header__seach--btn {
     box-sizing: border-box;
-    width: 68px;
+    width: 20%;
     height: 23px;
     border: solid 1px #707070;
     border-radius: 5px;
@@ -139,13 +146,9 @@ body {
     font-size: 2rem; }
 
 .p-section-map {
-  position: absolute;
-  left: 0;
-  right: 0;
   box-sizing: border-box;
-  bottom: 0;
   width: 100%;
-  height: 321px;
+  height: auto;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.8);
   background-image: url("../img/map.png");
@@ -154,10 +157,9 @@ body {
   background-position: center; }
 
 .p-section-map__inner {
-  position: relative;
   box-sizing: border-box;
   width: 475px;
-  height: 321px;
+  height: auto;
   padding: 50px;
   background: rgba(0, 0, 0, 0.3); }
   .p-section-map__inner .p-section__line {
@@ -174,6 +176,59 @@ body {
   .p-section-map__inner p {
     color: #ffffff;
     font-size: 0.8rem; }
+
+.p-article__img--archive {
+  box-sizing: border-box;
+  height: 120px;
+  padding-left: 50px;
+  background-color: #000000;
+  background-image: url("../img/cheeseburger.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff; }
+  .p-article__img--archive p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 120px; }
+    .p-article__img--archive p span {
+      font-size: 1rem;
+      vertical-align: middle; }
+
+.p-section__pagenation ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; }
+  .p-section__pagenation ul span {
+    margin: 20px 5px;
+    color: #707070;
+    font-weight: bold; }
+    .p-section__pagenation ul span a {
+      text-decoration: none;
+      text-decoration: none; }
+      .p-section__pagenation ul span a:link, .p-section__pagenation ul span a:visited, .p-section__pagenation ul span a:hover, .p-section__pagenation ul span a:active {
+        color: #707070; }
+  .p-section__pagenation ul li {
+    width: 17.5px;
+    height: 17.5px;
+    margin: 0 5px;
+    font-size: 1rem;
+    border: solid 1px #707070;
+    font-weight: bold;
+    text-align: center;
+    line-height: 17.5px; }
+    .p-section__pagenation ul li a {
+      text-decoration: none; }
+      .p-section__pagenation ul li a:link, .p-section__pagenation ul li a:visited, .p-section__pagenation ul li a:hover, .p-section__pagenation ul li a:active {
+        color: #707070; }
+  .p-section__pagenation ul li.p-section__pagenation--first {
+    background-color: #707070; }
+    .p-section__pagenation ul li.p-section__pagenation--first a {
+      text-decoration: none; }
+      .p-section__pagenation ul li.p-section__pagenation--first a:link, .p-section__pagenation ul li.p-section__pagenation--first a:visited, .p-section__pagenation ul li.p-section__pagenation--first a:hover, .p-section__pagenation ul li.p-section__pagenation--first a:active {
+        color: #ffffff; }
 
 .p-aside a {
   width: 130px;
@@ -275,6 +330,69 @@ body {
   position: absolute;
   left: 23.5px;
   bottom: 20px; }
+
+.c-section__h2--archive {
+  width: 87%;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 1.8rem; }
+
+.c-section__p--archive {
+  width: 87%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 1rem; }
+
+.c-section__card--archive {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 235px; }
+
+.c-section__sampleimage--archive {
+  box-sizing: inherit;
+  width: 44%;
+  height: 235px;
+  background-image: url(../img/sampleimage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.c-section__text--archive {
+  position: relative;
+  box-sizing: inherit;
+  width: 44%;
+  height: 235px;
+  padding: 20px;
+  background-color: #3C2B1C; }
+  .c-section__text--archive h3, .c-section__text--archive h4, .c-section__text--archive P {
+    color: #ffffff; }
+  .c-section__text--archive h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem; }
+  .c-section__text--archive h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem; }
+
+.c-section__btn--archive {
+  position: absolute;
+  left: calc(50% - 73px);
+  bottom: 20px;
+  box-sizing: border-box;
+  width: 146px;
+  height: 38px;
+  margin: 0 auto;
+  background-color: #F2EDE9;
+  color: #707070;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 25px; }
+  .c-section__btn--archive a {
+    text-decoration: none;
+    text-decoration: none; }
+    .c-section__btn--archive a:link, .c-section__btn--archive a:visited, .c-section__btn--archive a:hover, .c-section__btn--archive a:active {
+      color: #707070; }
 
 /* utility */
 #open_nav {

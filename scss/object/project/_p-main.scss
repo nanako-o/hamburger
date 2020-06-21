@@ -15,13 +15,9 @@
 }
 
 .p-section-map {
-    position: absolute;
-    left: 0;
-    right: 0;
     box-sizing: border-box;
-    bottom: 0;
     width: 100%;
-    height: 321px;
+    height: auto;
     margin: 0 auto;
     background: rgba(0,0,0,0.8);
     background-image: url("../img/map.png");
@@ -31,10 +27,9 @@
 }
 
 .p-section-map__inner {
-    position: relative;
     box-sizing: border-box;
     width: 475px;
-    height: 321px;
+    height: auto;
     padding: 50px;
     background: rgba(0,0,0,0.3);
     .p-section__line {
@@ -53,5 +48,73 @@
     p {
         color: #ffffff;
         font-size: 0.8rem;
+    }
+}
+
+.p-article__img--archive {
+    box-sizing: border-box;
+    height: 120px;
+    padding-left: 50px;
+    background-color: #000000;
+    background-image: url("../img/cheeseburger.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    p {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 120px;
+        span {
+            font-size: 1rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+.p-section__pagenation {
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        span{
+            margin: 20px 5px;
+            color: #707070;
+            font-weight: bold;
+            a {
+                text-decoration: none;
+                text-decoration: none;
+                &:link,&:visited,&:hover,&:active {
+                    color: #707070;
+                }
+              }
+        }
+        li{
+            width: 17.5px;
+            height: 17.5px;
+            margin: 0 5px;
+            font-size: 1rem;
+            border: solid 1px #707070;
+            font-weight: bold;
+            text-align: center;
+            line-height: 17.5px;
+            a {
+                text-decoration: none;
+                &:link,&:visited,&:hover,&:active {
+                    color: #707070;
+                }
+              }
+        }
+        li.p-section__pagenation--first{
+            background-color: #707070;
+            a {
+                text-decoration: none;
+                &:link,&:visited,&:hover,&:active {
+                    color: #ffffff;
+                }
+            }
+        }
     }
 }

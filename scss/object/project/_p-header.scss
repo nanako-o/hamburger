@@ -8,19 +8,20 @@
     h1 {
         padding-left:50px;
         color: #707070;
-        font-size: 3.2rem;
+        font-size: 3.2vw;
         line-height: 109px;
     }
 }
 
 .p-header__seach {
-    position: absolute;
+    width: 40%;
+    text-align: right;
     padding-right:20px;
-    right: 50px;
     .p-header__seach--text {
         box-sizing: border-box;
-        width: 198px;
+        width: 40%;
         height: 23px;
+        padding-left: 20px;
         border: solid 1px #707070;
         border-radius: 5px;
         background-color: #ffffff;
@@ -28,12 +29,11 @@
         background-size: 12px 12px;
         background-repeat: no-repeat;
         background-position: 5px center;
-        padding-left: 21px;
         outline: 0;
     }
     .p-header__seach--btn {
         box-sizing: border-box;
-        width: 68px;
+        width: 20%;
         height: 23px;
         border: solid 1px #707070;
         border-radius: 5px;
